@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project_app/startscreen/signup.dart';
 import '../startscreen/forgot.dart';
-import '../startscreen/signup.dart';
+import '../startscreen/mainscreen.dart';
 
 class Signin extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class Signin extends StatelessWidget {
     final heights = MediaQuery.of(context);
     return Scaffold(
       appBar: AppBar(
-          leading: IconButton(icon: Icon(Icons.arrow_back,color: Colors.black,), onPressed: ()=> Navigator.pop(context)),
+          leading: IconButton(icon: Icon(Icons.arrow_back,color: Colors.black,), onPressed: ()=> Navigator.push(context, MaterialPageRoute(builder: (_)=>Getstarted()))),
           backgroundColor: Colors.white,
           elevation: 3,
           centerTitle: true,

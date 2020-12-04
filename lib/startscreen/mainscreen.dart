@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../startscreen/signup.dart';
@@ -44,8 +45,7 @@ class Getstarted extends StatelessWidget {
                 ),
               ),
               SizedBox(height:height.size.height*0.02,),
-              Center(
-                child: Container(
+              Container(
                   width: height.size.width*0.7,
                   height: height.size.height*0.04,
                   decoration: BoxDecoration(
@@ -55,27 +55,28 @@ class Getstarted extends StatelessWidget {
                     ),
                   ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
+                      SizedBox(width: height.size.width*0.10,),
                       SvgPicture.asset("assets/Google.svg"),
                       SizedBox(width: 10,),Text("Proceed with Google",
-                        style: TextStyle(fontSize: 15),)
+                        style: TextStyle(fontSize: 16),)
                     ],
 
                   ),
                 ),
-              ),
-              SizedBox(width: 5,),
+             // SizedBox(width: 5,),
               SizedBox(height:height.size.height*0.02,),
               Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(width: 60, height: 60,),
                   Container(
                     height: 1,
-                    width: 130,
+                    width: 110,
                     color: Colors.black26, //decoration: ,
                   ),
-                  SizedBox(width: 10,),
+                  SizedBox(width: height.size.width*0.03,),
                   Text("OR"),
                   SizedBox(width: 10,),
                   Container(
@@ -90,13 +91,14 @@ class Getstarted extends StatelessWidget {
           SizedBox(height: height.size.height*0.02,),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(width: height.size.width*0.16),
+              //SizedBox(width: height.size.width*0.16),
               InkWell(
                 onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_)=>Signup())) ,
                 child: Container(
-                  width: height.size.width*0.28,
-                  height: height.size.height*0.04,
+                  width: height.size.width*0.35,
+                  height: height.size.height*0.05,
                   decoration: BoxDecoration(
                     border: Border.all(
                         color: Colors.black26,
@@ -104,11 +106,14 @@ class Getstarted extends StatelessWidget {
                     ),
                   ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(width: 15,),
+                      //SizedBox(width: 15,),
                       SvgPicture.asset("assets/Email.svg"),
-                      SizedBox(width: 5,),
-                      Text("Sign up")
+                      SizedBox(width: 10,),
+                      Text("Sign up",style: TextStyle(
+                        fontSize: 18
+                      ),)
                     ],
                   ),
                 ),
@@ -117,8 +122,8 @@ class Getstarted extends StatelessWidget {
               InkWell(
                 onTap:()=> Navigator.push(context, MaterialPageRoute(builder: (_)=> Signin())) ,
                 child: Container(
-                  width: height.size.width*0.28,
-                  height: height.size.height*0.04,
+                  width: height.size.width*0.35,
+                  height: height.size.height*0.05,
                   decoration: BoxDecoration(
                     border: Border.all(
                         color: Colors.black26,
@@ -126,11 +131,13 @@ class Getstarted extends StatelessWidget {
                     ),
                   ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(width: 15,),
                       SvgPicture.asset("assets/Email.svg"),
-                      SizedBox(width: 5,),
-                      Text("Sign in")
+                      SizedBox(width: 10,),
+                      Text("Sign in",style: TextStyle(
+                          fontSize: 18
+                      ),)
                     ],
                   ),
                 ),

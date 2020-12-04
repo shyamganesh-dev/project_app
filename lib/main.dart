@@ -13,7 +13,7 @@ class Matapp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "SFProText-Bold.ttf",
       ),
-      home: Getstarted() //Country(),
+      home: Country(),
     );
   }
 }

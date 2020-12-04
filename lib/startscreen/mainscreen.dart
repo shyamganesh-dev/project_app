@@ -33,14 +33,17 @@ class Getstarted extends StatelessWidget {
                       width: 1
                     ),
                   ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SvgPicture.asset("assets/Facebook.svg"),
-                      SizedBox(width: 10,),Text("Proceed with facebook",
-                    style: TextStyle(fontSize: 16),)
-                    ],
+                  child: GestureDetector(
+                    onTap: (){},
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SvgPicture.asset("assets/Facebook.svg"),
+                        SizedBox(width: 10,),Text("Proceed with facebook",
+                      style: TextStyle(fontSize: 16),)
+                      ],
 
+                    ),
                   ),
                 ),
               ),
@@ -54,15 +57,18 @@ class Getstarted extends StatelessWidget {
                         width: 1
                     ),
                   ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(width: height.size.width*0.10,),
-                      SvgPicture.asset("assets/Google.svg"),
-                      SizedBox(width: 10,),Text("Proceed with Google",
-                        style: TextStyle(fontSize: 16),)
-                    ],
+                  child: GestureDetector(
+                    onTap: (){},
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(width: height.size.width*0.10,),
+                        SvgPicture.asset("assets/Google.svg"),
+                        SizedBox(width: 10,),Text("Proceed with Google",
+                          style: TextStyle(fontSize: 16),)
+                      ],
 
+                    ),
                   ),
                 ),
              // SizedBox(width: 5,),

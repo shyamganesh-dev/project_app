@@ -38,29 +38,29 @@ class Forgot extends StatelessWidget {
                   ),
                 ),
               ),
-              InkWell(
-                onTap: () {},
-                child: Padding(
+               Padding(
                   padding: const EdgeInsets.all(30.0),
                   child: Center(
-                    child: Container(
-                      width:heights.size.width*1 ,
-                      height: heights.size.height*0.04,
-                      decoration: BoxDecoration(
-                        color: Color(0xff4667EE),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Center(
-                          child: Text("Send the reset link",
-                            style: TextStyle(
-                                color: Colors.white,fontSize: 18
-                            ),
-                          )
+                    child: GestureDetector(
+                      child: Container(
+                        width:heights.size.width*1 ,
+                        height: heights.size.height*0.04,
+                        decoration: BoxDecoration(
+                          color: Color(0xff4667EE),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Center(
+                            child: Text("Send the reset link",
+                              style: TextStyle(
+                                  color: Colors.white,fontSize: 18
+                              ),
+                            )
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
+
               SizedBox(height: heights.size.height*0.63,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
